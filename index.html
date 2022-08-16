@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title> Jogo Da Capibara </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css"/>
+        <script type="Text/Javascript" src="logica.js"> </script>
+    </head>
+
+    <body id="q1">
+
+        <header>
+            <img src="img/CAPYFINAL.png" id="capyimg" onclick="recarregar()"/>
+        </header>
+     
+    
+       <article class="col-9" id="article1">
+
+            <section class="col-6 section_cpu">
+                <label class="escolha_computador"> Jogar Contra o Computador: </label>
+                <br/> <br/>
+                <label class="escolha_computador"><input type="radio" id="cpu" name="cpu"/>
+                SIM &nbsp;&nbsp;&nbsp; </label> &nbsp;
+                <label class="escolha_computador"><input type="radio" id="cpu" name="cpu" checked/>
+                NÃO </label>
+            </section>
+
+
+
+            <section class="col-6 cores">
+                <label id="coreslabel"> Selecione a Cor das Linhas: </label>
+                <input class="col-2 cores1" type="color" id="cor1" name="cor1" />
+                <div id="q1"> </div>
+
+                <input class="cores3 col-2" type="submit" id="enviar" name="enviar" value="APLICAR" onclick="mudacor()" />
+                
+            </section>
+
+
+       </article>
+
+       <br/> <br/> 
+       <main id="q2">
+    
+        <section class="tabela sect_c1" id="q1"> <img src="img/transp.png" alt="imagem" id="c1" onclick="checkjogo(this.id)"/></section>
+            <section class="tabela sect_c2" id="q1"> <img src="img/transp.png" alt="imagem" id="c2" onclick="checkjogo(this.id)"/></section>
+            <section class="tabela sect_c3" id="q1"> <img src="img/transp.png" alt="imagem" id="c3" onclick="checkjogo(this.id)"/></section>
+            <section class="tabela sect_c4" id="q1"> <img src="img/transp.png" alt="imagem" id="c4" onclick="checkjogo(this.id)"/></section>
+            <section class="tabela sect_c5" id="q1"> <img src="img/transp.png" alt="imagem" id="c5" onclick="checkjogo(this.id)"/></section>
+            <section class="tabela sect_c6" id="q1"> <img src="img/transp.png" alt="imagem" id="c6" onclick="checkjogo(this.id)"/></section>
+            <section class="tabela sect_c7" id="q1"> <img src="img/transp.png" alt="imagem" id="c7" onclick="checkjogo(this.id)"/></section>
+            <section class="tabela sect_c8" id="q1"> <img src="img/transp.png" alt="imagem" id="c8" onclick="checkjogo(this.id)"/></section>
+            <section class="tabela sect_c9" id="q1"> <img src="img/transp.png" alt="imagem" id="c9" onclick="checkjogo(this.id)"/></section>
+       </main>
+       <br/>
+         
+    
+            <section id="visivel1" class="col-2 f1"> <p class="f1font"> &nbsp;&nbsp;&nbsp;&nbsp; CAPYBARA VENCEU </p></section>
+            <section id="visivel2" class="col-2 f2"> <p class="f2font"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RATARIA VENCEU </p></section>
+            <section id="visivel3" class="col-2 f3"> <p class="f3font"> &nbsp;&nbsp;&nbsp;&nbsp; DEU VELHA!!! </p></section>
+
+       </section>
+
+       <footer></footer>
+    </body>
+
+</html>
